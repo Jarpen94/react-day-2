@@ -1,28 +1,15 @@
 import React from 'react'
-
-import Button from './Button'
-
-const names = ['Ala', 'Ola', 'Ela']
-const namesList = names.map(name => <li key={name}>{name}</li>)
-
+import Route1 from './Route1'
+import Route2 from './Route2'
+import Route3 from './Route3'
 
 const App = (props) => (
-  <div>
     <div>
-      {names}
+        <Route1 />
+        <Route2 />
+        <Route3 />
     </div>
-    <ul>
-      {namesList}
-    </ul>
-    <Button 
-      label="Kliknij mnie!"
-      alertText = "Kliknąłeś"
-    />
-    <Button 
-      label="Click me!"
-      alertText = 'Clicked'
-    />
-  </div>
 )
+
 
 export default App
